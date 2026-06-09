@@ -309,7 +309,6 @@ class SynthesisLayer(torch.nn.Module):
         self.up_taps = filter_size * self.up_factor if self.up_factor > 1 and not self.is_torgb else 1
         self.register_buffer('up_filter', self.design_lowpass_filter(
             numtaps=self.up_taps, cutoff=self.in_cutoff, width=self.in_half_width*2, fs=self.tmp_sampling_rate))
-
         # Design downsampling filter.
         self.down_factor = int(np.rint(self.tmp_sampling_rate / self.out_sampling_rate))
         assert self.out_sampling_rate * self.down_factor == self.tmp_sampling_rate
@@ -360,6 +359,8 @@ class SynthesisLayer(torch.nn.Module):
         assert x.dtype == dtype
         return x
 
+    
+    #=======================================================
     @staticmethod
     def design_lowpass_filter(numtaps, cutoff, width, fs, radial=False):
         assert numtaps >= 1

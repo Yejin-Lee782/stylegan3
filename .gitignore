@@ -1,0 +1,26 @@
+# personal / system
+.bash_history
+.cache/
+.local/
+
+# python cache
+__pycache__/
+*/__pycache__/
+*.pyc
+
+# datasets and outputs
+datasets/
+training-runs/
+fid1000_logs/
+fid1000_temp_images/
+out/
+submission/
+archive/
+celebahq_train/
+disentanglement_results/
+zipfile/
+
+# generated / large files
+*.zip
+*.pkl
+*.tflite
