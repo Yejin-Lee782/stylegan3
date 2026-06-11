@@ -93,7 +93,7 @@ sudo docker run --gpus all -it --rm \
 
 Example command:
 
-
+```
 sudo docker run --gpus all -it --rm \
   --ipc=host \
   --user $(id -u):$(id -g) \
