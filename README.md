@@ -107,3 +107,11 @@ sudo docker run --gpus all -it --rm \
     --seeds=0-999
     --network=/workspace/training-runs/YOUR_MODEL_DIR/network-snapshot-XXXXXX.pkl
 ```
+
+## Dataset and Checkpoints
+datasets : https://drive.google.com/drive/folders/1ghEHozcdQRrskrWuQNxPsqHVfVjJR6Hp?usp=drive_link
+
+Checkpoints :https://drive.google.com/drive/folders/1ghEHozcdQRrskrWuQNxPsqHVfVjJR6Hp?usp=drive_link
+
+best checkpoint : https://drive.google.com/file/d/1i17xPAwcwWZb61CzrS5q-NAALjLI2Kuw/view?usp=drive_link
+
